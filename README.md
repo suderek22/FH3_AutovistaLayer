@@ -1,6 +1,12 @@
 ﻿# FH3_AutovistaLayer v1.0.0
 
-**Author** · suderek22
+<img width="480" height="270" alt="Zrzut ekranu 2026-11-23 011423" src="https://github.com/user-attachments/assets/b3c2e853-50a6-43bb-97b4-d35b6d7a1737" />
+<img width="480" height="270" alt="Zrzut ekranu 2026-11-23 011629" src="https://github.com/user-attachments/assets/9f3edb5a-22bc-4e25-a257-eaeacaf10eec" />
+<img width="480" height="270" alt="Zrzut ekranu 2026-11-23 011728" src="https://github.com/user-attachments/assets/794b035b-4cb6-4e10-b6d6-caec4727d45f" />
+<img width="480" height="270" alt="Zrzut ekranu 2026-11-23 011835" src="https://github.com/user-attachments/assets/5ddf8604-2513-4e77-8f31-3a608af91f9e" />
+<img width="480" height="270" alt="Zrzut ekranu 2026-11-23 012101" src="https://github.com/user-attachments/assets/9de80418-010a-4825-842e-3e7f37082801" />
+<img width="480" height="270" alt="Zrzut ekranu 2026-11-23 012430" src="https://github.com/user-attachments/assets/33a25784-4847-4436-a907-67e47b6a9b8e" />
+
 
 FH3_AutovistaLayer brings existing Forzavista geometry into Forza Horizon 3 free roam alongside LOD0. Depending on the car, this can include detailed engines, engine bays, hood liners, and trunk interiors.
 
@@ -27,5 +33,4 @@ FH3 Mod Platform checks GitHub Releases for newer versions. [AutovistaLayer rele
 ## Known issues
 
 - Some cars lack Forzavista parts, so the available detail varies by car.
-- A flat LOD0 engine-bay or trunk surface can still overlap the detailed geometry if the mod cannot match it to a showroom replacement.
 - Custom car packs remain untested.
