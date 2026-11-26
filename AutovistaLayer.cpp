@@ -12,6 +12,9 @@
 
 #include "fh3mod.h"
 
+bool registerAutoshowPrompt(const FH3ModApi*, FH3Mod*);
+void installAutoshowPreview(const FH3ModApi*, FH3Mod*, unsigned char*);
+
 namespace {
 // FH3 Opus 1.0.125.0. Layouts are from the native car-scene and model readers.
 constexpr std::uintptr_t kParseModelRva = 0x1EC0380;
@@ -305,6 +308,7 @@ DWORD WINAPI install(void*) {
         return 0;
     }
     platform->log(mod, "Runtime showroom LOD promotion active.");
+    installAutoshowPreview(platform, mod, game);
     return 0;
 }
 }
@@ -315,15 +319,17 @@ FH3MOD_EXPORT int fh3mod_init(const FH3ModApi* api) {
     FH3ModInfo info{};
     info.size = sizeof info;
     info.name = "FH3_AutovistaLayer";
-    info.version = "1.0.0";
+    info.version = "1.1.0";
     info.github_repo = "suderek22/FH3_AutovistaLayer";
     info.check_updates = 1;
     info.platform_version = "1.4.2";
-    info.description = "Includes showroom geometry when the game renders a car at LOD0.";
+    info.description = "Includes showroom geometry at LOD0 and adds Explode to the Autoshow preview.";
     mod = api->register_mod(&info);
     if (!mod)
         return 1;
     platform = api;
+    if (!registerAutoshowPrompt(api, mod))
+        api->log(mod, "Could not register the Autoshow Y prompt layout at startup.");
     HANDLE worker = CreateThread(nullptr, 0, install, nullptr, 0, nullptr);
     if (!worker)
         return 1;
