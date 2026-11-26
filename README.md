@@ -1,4 +1,4 @@
-﻿# FH3_AutovistaLayer v1.0.0
+﻿# FH3_AutovistaLayer v1.1.0
 
 <img width="480" height="270" alt="Zrzut ekranu 2026-11-23 011423" src="https://github.com/user-attachments/assets/b3c2e853-50a6-43bb-97b4-d35b6d7a1737" />
 <img width="480" height="270" alt="Zrzut ekranu 2026-11-23 011629" src="https://github.com/user-attachments/assets/9f3edb5a-22bc-4e25-a257-eaeacaf10eec" />
@@ -13,6 +13,10 @@ FH3_AutovistaLayer brings existing Forzavista geometry into Forza Horizon 3 free
 ## How it works
 
 The DLL detects the car's built-in LODS geometry as the game loads it and makes those parts available at LOD0. When the mod finds matching standard engine-bay or trunk parts, it suppresses their LOD0 meshes to reduce overlap. The mod uses the car's existing assets and makes its rendering changes in memory.
+
+## Autoshow preview
+
+After choosing a car and its colour, look for **Y Explode** beside **X Change Camera** on the final purchase preview. Press **Y** again to Implode. This uses the car's existing Forzavista animations so you can inspect its engine bay and interior before purchasing.
 
 ## Requirements
 
